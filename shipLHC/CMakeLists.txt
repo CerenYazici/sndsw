@@ -11,6 +11,7 @@ ${CMAKE_SOURCE_DIR}/genfit/core/include
 ${CMAKE_SOURCE_DIR}/genfit/trackReps/include
 ${CMAKE_SOURCE_DIR}/genfit/include/genfit
 ${CMAKE_SOURCE_DIR}/genfit/fields/include
+${CMAKE_SOURCE_DIR}/genfit/GBL/include
 ${ROOT_INCLUDE_DIR}
 )
 
@@ -41,12 +42,13 @@ sndScifiHit.cxx
 sndCluster.cxx
 SNDLHCEventHeader.cxx
 sndRecoTrack.cxx
+sndMillepedeCaller.cxx
 )
 
 Set(HEADERS )
 Set(LINKDEF shipLHCLinkDef.h)
 Set(LIBRARY_NAME shipLHC)
-Set(DEPENDENCIES Base ShipData GeoBase ParBase Geom Core genfit)
+Set(DEPENDENCIES Base ShipData GeoBase ParBase Geom Core genfit millepede)
 
 include(FindPythonInterp)
 list(APPEND PYTHONPATH  "${CMAKE_SOURCE_DIR}/shipLHC/scripts")
