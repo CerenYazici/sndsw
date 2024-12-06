@@ -43,6 +43,7 @@ sndCluster.cxx
 SNDLHCEventHeader.cxx
 sndRecoTrack.cxx
 sndMillepedeCaller.cxx
+GBLseedtrack.cxx
 )
 
 Set(HEADERS )
